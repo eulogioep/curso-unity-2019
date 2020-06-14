@@ -10,8 +10,8 @@ public class MyFirstScript : MonoBehaviour
     {
         //Clase
         Character hero = new Character();//Creo una instancia de la clase Character. Constructor por Defecto
-        Character heroine = new Character("Lara Croft");//Constructor personalizado
-        Character archer = new Character("Ojo de Alcón", 3);//Uso del tercer constructor
+        Character heroine = new Character("Lara Craft");//Constructor personalizado
+        Character archer = new Character("Ojo de Gavilán", 3);//Uso del tercer constructor
 
         //Estrucutura
         Weapon sword = new Weapon("Espada roma", 5);
@@ -23,7 +23,7 @@ public class MyFirstScript : MonoBehaviour
         hero.PrintCharacterStats();
         hero2.PrintCharacterStats();
 
-        hero.name = "Madonna";
+        hero.name = "Terence Hill";
         hero2.PrintCharacterStats();
         Debug.Log("*****************");
 

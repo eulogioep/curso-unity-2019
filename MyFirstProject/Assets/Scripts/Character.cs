@@ -10,7 +10,7 @@ public class Character
 
     public Character()//Constructor
     {
-        name = "Antonio Banderas";
+        name = "Bud Spencer";
     }
 
     //Otro Constructor. Llamo name a la variable que paso por parámetro por consistencia. Se pone el mismo nombre que a la variable
@@ -31,6 +31,14 @@ public class Character
     public void PrintCharacterStats()
     {
         Debug.LogFormat("Heroe: {0} - {1} EXP", this.name, this.exp);
+    }
+
+    //Encapsulación. Método private ya que no queremos que otra clase pueda ejecutar este Reset del personaje.
+    //Sólo se podrá llamar a este método desde esta misma clase.
+    private void Reset()
+    {
+        this.name = "Bud Spencer";
+        this.exp = 0;
     }
 
 }
