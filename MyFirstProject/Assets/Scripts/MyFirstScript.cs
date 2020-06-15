@@ -40,6 +40,19 @@ public class MyFirstScript : MonoBehaviour
         hero.PrintCharacterStats();
         heroine.PrintCharacterStats();
         archer.PrintCharacterStats();
+
+        Debug.Log("*** Prueba de Herencia ***");
+        Paladin palad = new Paladin("Gilman", sword);
+
+        palad.PrintCharacterStats();
+
+        Archer arquero = new Archer("Legolas", new Weapon("Arco de los bosques", 8));
+
+        arquero.PrintCharacterStats();
+
+        Magician mago = new Magician("Gandalf", 5);
+
+        mago.PrintCharacterStats();
     }
 
     // Update is called once per frame
